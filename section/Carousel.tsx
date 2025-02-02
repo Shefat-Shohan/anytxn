@@ -14,7 +14,7 @@ export default function Carousel() {
           <Slider />
         </div>
       </div>
-      <Path className="lg:-mt-24 md:-mt-14 -mt-24" />
+      <Path className="lg:-mt-12 md:-mt-14 -mt-24" />
     </div>
   );
 }

@@ -26,7 +26,7 @@ export default function Counter({ targetNumber, before, after }: CounterProps) {
 
   return (
     <div>
-      <h1 className="lg:text-[96px] lg:leading-[96px] text-[64px] leading-[64px] font-semibold bg-gradient-to-r from-[#0861C8] to-[#1674E0] bg-clip-text text-transparent">
+      <h1 className="lg:text-[96px] lg:leading-[96px] text-[64px] leading-[64px] font-semibold bg-gradient-to-t from-[#0861C8] to-[#1674E0] bg-clip-text text-transparent">
         <span>{before}</span>
         <span>{count}</span>
         <span>{after}</span>
