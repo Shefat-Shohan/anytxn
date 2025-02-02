@@ -45,7 +45,7 @@ export default function Hero() {
             }}
             className="lg:block hidden object-cover absolute top-0 -left-[5%] w-[125%]  h-[155%] z-10"
           >
-            <HeroDesktopPattern1 className="" />
+            <HeroDesktopPattern1 className="slide-in-left" />
           </motion.div>
           <motion.div
             style={{ x: rightX, y: rightY, transition: "all 0.5s ease-out" }}
@@ -56,7 +56,7 @@ export default function Hero() {
             }}
             className="absolute object-cover -top-[5%] z-10"
           >
-            <HeroDesktopPattern2 className="" />
+            <HeroDesktopPattern2 className="slide-in-right" />
           </motion.div>
         </motion.div>
 

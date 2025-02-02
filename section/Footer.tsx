@@ -13,11 +13,11 @@ export default function Footer() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const leftX = useTransform(mouseX, [-500, 500], [10, -10]);
-  const leftY = useTransform(mouseY, [-500, 500], [10, -10]);
+  const leftX = useTransform(mouseX, [-500, 500], [8, -8]);
+  const leftY = useTransform(mouseY, [-500, 500], [8, -8]);
 
-  const rightX = useTransform(mouseX, [-500, 500], [10, -10]);
-  const rightY = useTransform(mouseX, [-500, 500], [10, -10]);
+  const rightX = useTransform(mouseX, [-500, 500], [8, -8]);
+  const rightY = useTransform(mouseX, [-500, 500], [8, -8]);
 
   const hadnleMotionValue = (event: React.MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY, currentTarget } = event;
@@ -40,17 +40,13 @@ export default function Footer() {
         />
         {/* desktop background pattern */}
         <motion.div onMouseMove={hadnleMotionValue}>
-          <motion.div
-            className="hidden lg:block absolute object-cover -top-20 right-[10%] w-full"
-            style={{ x: leftX, y: leftY }}
-            transition={{ type: "spring", shiftness: 200, damping: 25 }}
-          >
+          <motion.div className="hidden lg:block absolute object-cover -top-20 right-[10%] w-full">
             <FooterDesktopPatternDark className="slide-in-left" />
           </motion.div>
 
           <motion.div
             className="hidden lg:block absolute object-cover bottom-[15%] right-0 -z-10 w-full"
-            style={{ x: rightX, y: rightY }}
+            style={{ x: rightX, y: rightY, opacity: 1 }}
             transition={{ type: "spring", shiftness: 200, damping: 25 }}
           >
             <FooterDesktopPatternLight className="slide-in-right" />

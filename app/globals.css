@@ -83,7 +83,7 @@ body {
     );
   }
   .cta-gradient {
-    background: radial-gradient(circle at 30% 20%, #0eb8ed 5%, #005bc4 40%);
+    background: radial-gradient(circle at 40% 0%, #0eb8ed 0%, #005bc4 40%);
   }
   .parallelpgram-Image {
     clip-path: polygon(100% 0%, 100% 45%, 60% 100%, 0 100%, 65% 0);
@@ -137,6 +137,6 @@ body {
 
   .slide-in-right {
     animation: slideInFromRight 1.5s ease-in forwards;
-    animation-delay: 0.2s;
+    animation-delay: 0.4s;
   }
 }
