@@ -54,7 +54,7 @@ export default function Hero() {
               stiffness: 200,
               damping: 25,
             }}
-            className="absolute object-cover -top-[5%] right-0 w-[125%] h-[125%] z-10"
+            className="absolute object-cover -top-[5%] z-10"
           >
             <HeroDesktopPattern2 className="" />
           </motion.div>
