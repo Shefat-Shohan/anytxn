@@ -40,7 +40,11 @@ export default function Footer() {
         />
         {/* desktop background pattern */}
         <motion.div onMouseMove={hadnleMotionValue}>
-          <motion.div className="hidden lg:block absolute object-cover -top-20 right-[10%] w-full">
+          <motion.div
+            style={{ x: leftX, y: leftY, opacity: 1 }}
+            transition={{ type: "spring", shiftness: 200, damping: 25 }}
+            className="hidden lg:block absolute object-cover -top-20 right-[10%] w-full"
+          >
             <FooterDesktopPatternDark className="slide-in-left" />
           </motion.div>
 
