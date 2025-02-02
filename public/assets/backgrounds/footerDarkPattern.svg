@@ -1,0 +1,9 @@
+<svg class="lg:block hidden absolute h-[120%] w-[120%] left-[-10%] top-[-10%]" preserveAspectRatio="xMidYMid slice" viewBox="0 0 2316 1021" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="cta-background-patterns">
+    <g id="dark-patterns" style="transform: translate3d(1.23251%, 0.00137212%, 0px); transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94); display: none;">
+      <!-- Include all the dark patterns here -->
+      <g id="Vector" style="mix-blend-mode:multiply"><path d="M1968.32 314.946V192.878L1492.64 587.535H1639.77L1968.32 314.946Z" fill="url(#paint0_linear_1_547)"></path></g>
+      <!-- Repeat the above pattern for all other dark pattern paths -->
+    </g>
+  </g>
+</svg>
