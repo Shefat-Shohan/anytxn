@@ -1,6 +1,6 @@
 import financialService from "@/public/assets/backgrounds/financalservice.png";
 import agileAdaptable from "@/public/assets/backgrounds/agileAdaptable.png";
-import compliance from "@/public/assets/backgrounds/Compliance.png";
+import COMPLIANCE from "@/public/assets/backgrounds/Compliance.png";
 import secure from "@/public/assets/backgrounds/Secure.png";
 import bankOfChengde from "@/public/assets/clients/bankOfChengde.webp";
 import bankOfChina from "@/public/assets/clients/bankOfChina.webp";
@@ -50,7 +50,7 @@ export const carousel = [
       "Navigate through the evolving regulatory landscape with confidence by streamlining compliance management—through real-time risk monitoring solutions powered by AI and machine learning.",
     paragraph:
       "Transform your compliance strategy with flexible and diversified policy rules, powered by cutting-edge technology that is designed for seamless integration with core banking and card payment systems.",
-    image: compliance,
+    image: COMPLIANCE,
   },
   {
     subtitle: "Secure and safe",

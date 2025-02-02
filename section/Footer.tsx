@@ -45,7 +45,7 @@ export default function Footer() {
             style={{ x: leftX, y: leftY }}
             transition={{ type: "spring", shiftness: 200, damping: 25 }}
           >
-            <FooterDesktopPatternDark />
+            <FooterDesktopPatternDark className="slide-in-left" />
           </motion.div>
 
           <motion.div
@@ -53,7 +53,7 @@ export default function Footer() {
             style={{ x: rightX, y: rightY }}
             transition={{ type: "spring", shiftness: 200, damping: 25 }}
           >
-            <FooterDesktopPatternLight />
+            <FooterDesktopPatternLight className="slide-in-right" />
           </motion.div>
         </motion.div>
 

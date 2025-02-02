@@ -39,24 +39,24 @@ export default function Hero() {
           <motion.div
             style={{ x: leftX, y: leftY, transition: "all 0.5s ease-out" }}
             transition={{
-              type: "tween",
+              type: "spring",
               stiffness: 200,
               damping: 25,
             }}
             className="lg:block hidden object-cover absolute top-0 -left-[5%] w-[125%]  h-[155%] z-10"
           >
-            <HeroDesktopPattern1 />
+            <HeroDesktopPattern1 className="slide-in-left" />
           </motion.div>
           <motion.div
             style={{ x: rightX, y: rightY, transition: "all 0.5s ease-out" }}
             transition={{
-              type: "tween",
+              type: "spring",
               stiffness: 200,
               damping: 25,
             }}
-            className="absolute object-cover -top-[5%] left-0 w-[125%] h-[125%] z-10"
+            className="absolute object-cover -top-[5%] right-0 w-[125%] h-[125%] z-10"
           >
-            <HeroDesktopPattern2 />
+            <HeroDesktopPattern2 className="slide-in-right" />
           </motion.div>
         </motion.div>
 

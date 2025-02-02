@@ -2,16 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import siteLogo from "@/public/assets/backgrounds/logo.webp";
-import { ChevronDown, ChevronRightIcon, ChevronUp, Divide } from "lucide-react";
+import { ChevronDown, ChevronRightIcon } from "lucide-react";
 import coloredLogo from "@/public/assets/backgrounds/coloredLogo.svg";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { dropdown, language, mobileLanguage } from "@/data";
 import { useEffect, useRef, useState } from "react";
