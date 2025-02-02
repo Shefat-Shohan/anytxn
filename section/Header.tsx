@@ -49,18 +49,25 @@ export default function Header() {
   }, [isOpen]);
 
   // change navigation menu background
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const changeColor = () => {
+        if (window.scrollY >= 90) {
+          setColor(true);
+        } else {
+          setColor(false);
+        }
+      };
 
-  window.addEventListener("scroll", changeColor);
+      window.addEventListener("scroll", changeColor);
+
+      return () => {
+        window.removeEventListener("scroll", changeColor);
+      };
+    }
+  }, []);
   // show navigation on scroll up
   const { scrollY } = useScroll();
-
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
 
