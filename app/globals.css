@@ -113,30 +113,31 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  @keyframes slideInFromLeft {
+  @keyframes slideInLeftDiagonally {
     0% {
-      transform: translateX(-100%);
+      transform: translate(-30%, -30%);
     }
     100% {
-      transform: translateX(0);
+      transform: translate(0, 0);
     }
   }
 
   .slide-in-left {
-    animation: slideInFromLeft 1.5s ease-in forwards;
+    animation: slideInLeftDiagonally 1.5s ease-in forwards;
+    animation-delay: 0.4s;
   }
 
-  @keyframes slideInFromRight {
+  @keyframes slideInDiagonally {
     0% {
-      transform: translateX(100%);
+      transform: translate(30%, -30%);
     }
     100% {
-      transform: translateX(0);
+      transform: translate(0, 0);
     }
   }
 
   .slide-in-right {
-    animation: slideInFromRight 1.5s ease-in forwards;
+    animation: slideInDiagonally 1.5s ease-in forwards;
     animation-delay: 0.4s;
   }
 }
