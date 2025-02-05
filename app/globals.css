@@ -87,6 +87,7 @@ body {
   }
   .parallelpgram-Image {
     clip-path: polygon(100% 0%, 100% 45%, 60% 100%, 0 100%, 65% 0);
+    animation: slide 4s linear infinite;
   }
   .parallelpgramMobile-Image {
     clip-path: polygon(0 10%, 100% 0, 100% 80%, 0% 90%);
@@ -112,32 +113,5 @@ body {
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
-  @keyframes slideInLeftDiagonally {
-    0% {
-      transform: translate(-30%, -30%);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-
-  .slide-in-left {
-    animation: slideInLeftDiagonally 1.5s ease-in forwards;
-    animation-delay: 0.4s;
-  }
-
-  @keyframes slideInDiagonally {
-    0% {
-      transform: translate(30%, -30%);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-
-  .slide-in-right {
-    animation: slideInDiagonally 1.5s ease-in forwards;
-    animation-delay: 0.4s;
   }
 }

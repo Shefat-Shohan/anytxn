@@ -6,7 +6,7 @@ import Image from "next/image";
 import { ChevronRightIcon, LucideLinkedin } from "lucide-react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/16/solid";
 import CtaMobileBg from "@/public/assets/backgrounds/ctaMobileBg.svg";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
 import FooterDesktopPatternDark from "@/app/components/icons/FooterDesktopPatternDark";
 import FooterDesktopPatternLight from "@/app/components/icons/FooterDesktopPatternLight";
 export default function Footer() {
@@ -27,7 +27,6 @@ export default function Footer() {
     mouseX.set(clientX - centerX);
     mouseY.set(clientY - centerY);
   };
-
   return (
     <footer className="relative overflow-clip">
       {/* footer bottom */}
@@ -41,8 +40,18 @@ export default function Footer() {
         {/* desktop background pattern */}
         <motion.div onMouseMove={hadnleMotionValue}>
           <motion.div
-            style={{ x: leftX, y: leftY, opacity: 1 }}
-            transition={{ type: "spring", shiftness: 200, damping: 25 }}
+            style={{
+              x: leftX,
+              y: leftY,
+              opacity: 1,
+              transition: "all 0.5s ease-out",
+            }}
+            initial={{ x: "-30%", y: "-30%" }}
+            animate={{ x: "0%", y: "0%" }}
+            transition={{
+              duration: 1.3,
+              ease: "easeIn",
+            }}
             className="hidden lg:block absolute object-cover -top-20 right-[10%] w-full"
           >
             <FooterDesktopPatternDark className="slide-in-left" />
@@ -50,8 +59,19 @@ export default function Footer() {
 
           <motion.div
             className="hidden lg:block absolute object-cover bottom-[15%] right-0 -z-10 w-full"
-            style={{ x: rightX, y: rightY, opacity: 1 }}
-            transition={{ type: "spring", shiftness: 200, damping: 25 }}
+            style={{
+              x: rightX,
+              y: rightY,
+              opacity: 1,
+              transition: "all 0.5s ease-out",
+            }}
+            initial={{ x: "30%", y: "-30%" }}
+            animate={{ x: "0%", y: "0%" }}
+            transition={{
+              duration: 1.2,
+              ease: "easeIn",
+              delay: 0.3,
+            }}
           >
             <FooterDesktopPatternLight className="slide-in-right" />
           </motion.div>

@@ -38,25 +38,29 @@ export default function Hero() {
         <motion.div onMouseMove={handleMotionValue}>
           <motion.div
             style={{ x: leftX, y: leftY, transition: "all 0.5s ease-out" }}
+            initial={{ x: "-30%", y: "-30%" }}
+            animate={{ x: "0%", y: "0%" }}
             transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 25,
+              duration: 1.8,
+              ease: "easeIn",
+              delay: 0.5,
             }}
             className="lg:block hidden object-cover absolute top-0 -left-[5%] w-[125%]  h-[155%] z-10"
           >
-            <HeroDesktopPattern1 className="slide-in-left" />
+            <HeroDesktopPattern1 />
           </motion.div>
           <motion.div
             style={{ x: rightX, y: rightY, transition: "all 0.5s ease-out" }}
+            initial={{ x: "30%", y: "-30%" }}
+            animate={{ x: "0%", y: "0%" }}
             transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 25,
+              duration: 1.8,
+              ease: "easeIn",
+              delay: 0.5,
             }}
             className="absolute object-cover -top-[5%] z-10"
           >
-            <HeroDesktopPattern2 className="slide-in-right" />
+            <HeroDesktopPattern2 />
           </motion.div>
         </motion.div>
 
@@ -94,7 +98,7 @@ export default function Hero() {
             <div className="h-full hidden lg:block">
               <Image
                 src={modelImage}
-                className="parallelpgram-Image w-[75%] h-[125%] object-cover absolute top-0 -right-20 z-2"
+                className="parallelpgram-Image slideImage w-[75%] h-[125%] object-cover absolute top-0 -right-20 z-2"
                 alt="model image"
               />
             </div>
