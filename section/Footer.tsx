@@ -41,7 +41,7 @@ export default function Footer() {
         <motion.div onMouseMove={hadnleMotionValue}>
           <motion.div
             style={{
-              x: leftX,
+              x: rightX,
               y: leftY,
               opacity: 1,
               transition: "all 0.5s ease-out",
@@ -60,7 +60,7 @@ export default function Footer() {
           <motion.div
             className="hidden lg:block absolute object-cover bottom-[15%] right-0 -z-10 w-full"
             style={{
-              x: rightX,
+              x: leftX,
               y: rightY,
               opacity: 1,
               transition: "all 0.5s ease-out",
