@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Homepage | Anytxn",
+  title: "Home Page | Anytxn",
   description: "",
 };
 
